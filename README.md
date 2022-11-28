@@ -1,0 +1,2 @@
+# Sola-Scriptura
+Sola Scriptura
