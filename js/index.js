@@ -55,6 +55,9 @@ slider.addEventListener('mousemove', e => {
 // show more
 const btn = document.querySelector('.button');
 const text = document.querySelector('.text');
+const i2 = document.getElementById('2');
+const i3 = document.getElementById('3');
+const i4 = document.getElementById('4');
 const i5 = document.getElementById('5');
 const i6 = document.getElementById('6');
 const i7 = document.getElementById('7');
@@ -65,6 +68,9 @@ let isOpen = false;
 btn.addEventListener('click', e => {
     if (isOpen == false) {
         isOpen = true;
+        i2.classList.remove('hidden-1col');
+        i3.classList.remove('hidden-1col');
+        i4.classList.remove('hidden-1col');
         i5.classList.remove('hidden-2col');
         i6.classList.remove('hidden-2col');
         i7.classList.remove('hidden-2col');
@@ -73,6 +79,9 @@ btn.addEventListener('click', e => {
         text.innerHTML = "SHOW LESS";
     } else {
         isOpen = false;
+        i2.classList.add('hidden-1col');
+        i3.classList.add('hidden-1col');
+        i4.classList.add('hidden-1col');
         i5.classList.add('hidden-2col');
         i6.classList.add('hidden-2col');
         i7.classList.add('hidden-2col');
