@@ -100,6 +100,14 @@ td {
   padding-bottom: 7%;
 }
 
+#title i {
+  Text-width: 100px;
+}
+
+.scroll {
+  margin-bottom: 200px;
+}
+
 /* conference *****************************************************************************/
 
 #conference {
@@ -212,8 +220,10 @@ td {
   margin-bottom: 200px;
 }
 
-#listen iframe {
-  padding: 12px;
+.video {
+  padding: 1%;
+  width: 33%;
+  height: 14vw;
 }
 
 .video-div {
