@@ -35,24 +35,8 @@ a:hover {
   text-align: left;
 }
 
-.right {
-  text-align: right;
-}
-
-.color-black {
-  background: #000;
-}
-
-.color-blue {
-  background: #54BFC8;
-}
-
 .margin-b {
   margin-bottom: 50px;
-}
-
-td {
-  padding-right: 1rem;
 }
 
 /* title **********************************************************************************/
@@ -236,7 +220,7 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   position:relative;
-  color: #000;
+  color: #392B1A;
 }
 
 #movement::before {
@@ -272,16 +256,25 @@ td {
   font-size: 3rem;
 }
 
-#movement h3 {
-  padding-left: 20%;
-}
-
-#movement a {
-  color: #000;
+#movement h6 {
+  margin-bottom: 20px;
 }
 
 #movement a:hover {
-  color: #FAFE3E
+  color: #FAFE3E;
+}
+
+#movement .btn {
+  padding: 1rem 3rem;
+  border-radius: 128px;
+  background-color: #fff;
+  border: none;
+  color: #392B1A;
+}
+
+#movement .btn:hover {
+  background-color: #392B1A;
+  color: #fff;
 }
 
 /* Headings ********************************************************************** */
@@ -377,6 +370,10 @@ td {
 
 #foot h4 {
   margin-bottom: 20px;
+}
+
+td {
+  padding-right: 1rem;
 }
 
 /* Animation ********************************************************************* */
