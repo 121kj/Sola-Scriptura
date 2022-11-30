@@ -500,6 +500,10 @@ td {
     padding: 15% 10%;
   }
 
+  #title .container-fluid {
+    padding: 50% 10% 7%;
+  }
+
   #foot .container-fluid {
     padding: 2% 10%;
   }
@@ -597,6 +601,10 @@ td {
 @media (max-width: 576px) {
   .container-fluid {
     padding: 15% 5%;
+  }
+
+  #title .container-fluid {
+    padding: 50% 5% 7%;
   }
 
   #foot .container-fluid {
