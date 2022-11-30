@@ -624,6 +624,10 @@ td {
     padding: 50% 5% 7%;
   }
 
+  #conference .container-fluid {
+    padding: 40% 5%;
+  }
+
   #movement .container-fluid {
     padding: 30% 5%;
   }
