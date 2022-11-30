@@ -51,3 +51,33 @@ slider.addEventListener('mousemove', e => {
     const walk = x - startX;
     slider.scrollLeft = scrollLeft - walk;
 });
+
+// show more
+const btn = document.querySelector('.button');
+const text = document.querySelector('.text');
+const i5 = document.getElementById('5');
+const i6 = document.getElementById('6');
+const i7 = document.getElementById('7');
+const i8 = document.getElementById('8');
+const i9 = document.getElementById('9');
+let isOpen = false;
+
+btn.addEventListener('click', e => {
+    if (isOpen == false) {
+        isOpen = true;
+        i5.classList.remove('hidden-2col');
+        i6.classList.remove('hidden-2col');
+        i7.classList.remove('hidden-2col');
+        i8.classList.remove('hidden-2col');
+        i9.classList.remove('hidden-2col');
+        text.innerHTML = "SHOW LESS";
+    } else {
+        isOpen = false;
+        i5.classList.add('hidden-2col');
+        i6.classList.add('hidden-2col');
+        i7.classList.add('hidden-2col');
+        i8.classList.add('hidden-2col');
+        i9.classList.add('hidden-2col');
+        text.innerHTML = "SHOW MORE";
+    }
+});
