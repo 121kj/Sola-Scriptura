@@ -323,6 +323,7 @@ a:hover {
   --bs-accordion-border-radius: 0;
   --bs-accordion-btn-padding-y: 1.5rem;
   --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-border-width: 0
   
 }
 
