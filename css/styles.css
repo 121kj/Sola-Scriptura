@@ -138,8 +138,8 @@ a:hover {
   left     : 0;
   pointer-events   : none;
   background-image : linear-gradient(to bottom, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
+                    rgba(18,18,18,0) 0%, 
+                    rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
 }
@@ -195,8 +195,8 @@ a:hover {
   left     : 0;
   pointer-events   : none;
   background-image : linear-gradient(to top, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
+                    rgba(18,18,18,0) 0%, 
+                    rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
 }
@@ -597,10 +597,6 @@ td {
     margin-bottom: 50px;
   }
 
-  .hidden-1col {
-    display: none;
-  }
-
   #nav h3 {
     font-size: 0.7rem;
   }
@@ -628,6 +624,10 @@ td {
     padding: 50% 5% 7%;
   }
 
+  #movement .container-fluid {
+    padding: 30% 5%;
+  }
+
   #foot .container-fluid {
     padding: 2% 5%;
   }
@@ -638,5 +638,11 @@ td {
 
   h3 {
     font-size: 1rem;
+  }
+
+  .video {
+    width: 100%;
+    height: 60vw;
+    margin-bottom: 50px;
   }
 }
