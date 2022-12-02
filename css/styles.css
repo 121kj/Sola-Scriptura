@@ -705,6 +705,15 @@ td {
     font-size: 1rem;
   }
 
+  .footer {
+    font-size: 10px;
+  }
+
+  #foot i {
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
   .slide {
     padding-left: 5%;
   }
