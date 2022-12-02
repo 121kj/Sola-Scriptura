@@ -1,15 +1,23 @@
 @font-face {
   font-family: 'GmarketSansMedium';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: 300, 500, 700;
+  font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   font-family: 'GmarketSansMedium';
-  font-weight: 500;
+  font-weight: normal;
   text-align: center;
-  background-color: #000;
+  background-color: #121212;
   color: #fff;
   font-size: 18px;
 }
@@ -42,7 +50,8 @@ a:hover {
 /* Headings ********************************************************************** */
 
 .section-heading {
-  font-weight: 700;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  /* font-weight: 700; */
   font-size: 2.5rem;
   line-height: 2;
 }
@@ -51,7 +60,6 @@ a:hover {
 
 .container-fluid{
   padding: 15% 17%;
-  max-width: 1728px;
 }
 
 /* title **********************************************************************************/
@@ -71,8 +79,8 @@ a:hover {
   left     : 0;
   pointer-events   : none;
   background-image : linear-gradient(to bottom, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
+                    rgba(18,18,18,0) 0%, 
+                    rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
 }
@@ -107,6 +115,10 @@ a:hover {
   margin-bottom: 200px;
 }
 
+#title h1 {
+  font-family: 'GangwonEduPowerExtraBoldA';
+}
+
 /* conference *****************************************************************************/
 
 #conference {
@@ -114,6 +126,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position:relative;
+  padding-bottom: 7.5%;
 }
 
 #conference::before {
@@ -124,8 +137,8 @@ a:hover {
   left     : 0;
   pointer-events   : none;
   background-image : linear-gradient(to top, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
+                    rgba(18,18,18,0) 0%, 
+                    rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
 }
@@ -144,11 +157,24 @@ a:hover {
   height   : 4em;
 }
 
+#conference .container-fluid {
+  padding: 15% 17% 50px;
+}
+
 #conference img {
   width: 400px;
   height: 520px;
   padding-right: 50px;
   padding-bottom: 20px;
+}
+
+.img {
+  background-color: #373737;
+  width: 350px;
+  height: 500px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  line-height: 500px;
 }
 
 .img-div {
@@ -158,13 +184,18 @@ a:hover {
 }
 
 .slide {
+  padding-left: 17%;
   width: 100%;
   height: 600px;
+  white-space:nowrap;
   overflow-x: scroll;
-  white-space: nowrap;
 }
 
 .slide::-webkit-scrollbar {
+  display: none;
+}
+
+/* .slide::-webkit-scrollbar {
   background: transparent;
 }
 
@@ -176,7 +207,7 @@ a:hover {
 .slide::-webkit-scrollbar-corner {
   border-radius: 10px;
   background: #fff;
-}
+} */
 
 /* listen *********************************************************************************/
 
@@ -209,8 +240,8 @@ a:hover {
   left     : 0;
   pointer-events   : none;
   background-image : linear-gradient(to bottom, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
+                    rgba(18,18,18,0) 0%, 
+                    rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
 }
@@ -263,36 +294,9 @@ a:hover {
   color: #392B1A;
 }
 
-#movement::before {
-  content  : "";
-  position : absolute;
-  z-index  : 1;
-  top   : 0;
-  left     : 0;
-  pointer-events   : none;
-  background-image : linear-gradient(to top, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
-  width    : 100%;
-  height   : 4em;
-}
-
-#movement::after {
-  content  : "";
-  position : absolute;
-  z-index  : 1;
-  bottom   : 0;
-  left     : 0;
-  pointer-events   : none;
-  background-image : linear-gradient(to bottom, 
-                    rgba(0,0,0,0) 0%, 
-                    rgba(0,0,0,1) 90%);
-  width    : 100%;
-  height   : 4em;
-}
-
 .move-title {
-  font-weight: 700;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  /* font-weight: 700; */
   font-size: 3rem;
 }
 
@@ -329,7 +333,7 @@ a:hover {
 
 .accordion-item {
   color: #fff;
-  background: #000;
+  background: #121212;
   border-bottom: solid 1px #fff;
 }
 
@@ -339,12 +343,12 @@ a:hover {
 
 .accordion-button.collapsed {
   color: #fff;
-  background: #000;
+  background: #121212;
 }
 
 .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #000;
+  background-color: #121212;
 }
 
 .accordion-button.collapsed::after {
@@ -405,8 +409,9 @@ td {
 
 @media (max-width: 1400px) {
   h1 {
+    font-family: 'GangwonEduPowerExtraBoldA';
     font-size: 2rem;
-    font-weight: 700;
+    /* font-weight: 700; */
   }
 
   .section-heading {
@@ -425,6 +430,10 @@ td {
     padding: 15% 14%;
   }
 
+  #conference .container-fluid {
+    padding: 15% 14% 50px;
+  }
+
   #foot .container-fluid {
     padding: 2% 14%;
   }
@@ -435,6 +444,10 @@ td {
 
   .psalms-img {
     width: 540px;
+  }
+
+  .slide {
+    padding-left: 14%;
   }
 
   .video {
@@ -485,6 +498,12 @@ td {
     height: 480px;
   }
 
+  .img {
+    width: 310px;
+    height: 460px;
+    line-height: 460px;
+  }
+
   .img-div {
     width: 360px;
     height: 540px;
@@ -502,6 +521,10 @@ td {
 
   #title .container-fluid {
     padding: 50% 10% 7%;
+  }
+
+  #conference .container-fluid {
+    padding: 15% 10% 50px;
   }
 
   #foot .container-fluid {
@@ -547,6 +570,16 @@ td {
   #conference img {
     width: 320px;
     height: 440px;
+  }
+
+  .img {
+    width: 270px;
+    height: 420px;
+    line-height: 420px;
+  }
+
+  .slide {
+    padding-left: 10%;
   }
 
   .img-div {
@@ -625,7 +658,11 @@ td {
   }
 
   #conference .container-fluid {
-    padding: 40% 5%;
+    padding: 40% 5% 50px;
+  }
+
+  #conference {
+    padding-bottom: 20%;
   }
 
   #movement .container-fluid {
@@ -642,6 +679,10 @@ td {
 
   h3 {
     font-size: 1rem;
+  }
+
+  .slide {
+    padding-left: 5%;
   }
 
   .video {
