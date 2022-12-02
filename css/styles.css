@@ -379,7 +379,10 @@ a:hover {
 
 #foot .container-fluid {
   padding: 2% 17%;
-  max-width: 1728px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .footer {
@@ -392,6 +395,19 @@ a:hover {
 
 td {
   padding-right: 1rem;
+}
+
+.icon {
+  align-self: flex-end;
+}
+
+#foot i {
+  font-size: 26px;
+  padding-left: 1rem;
+}
+
+#foot a:hover {
+  color: #fff;
 }
 
 /* Animation ********************************************************************* */
@@ -493,6 +509,10 @@ td {
     font-size: 14px;
   }
 
+  #foot i {
+    font-size: 23px;
+  }
+
   #conference img {
     width: 360px;
     height: 480px;
@@ -565,6 +585,10 @@ td {
 
   .footer {
     font-size: 12px;
+  }
+
+  #foot i {
+    font-size: 20px;
   }
 
   #conference img {
