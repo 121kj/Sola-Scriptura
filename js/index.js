@@ -81,3 +81,16 @@ btn.addEventListener('click', e => {
         text.innerHTML = "SHOW MORE";
     }
 });
+
+// navbar
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener("scroll", e => {
+    if (window.scrollY==0) {
+        navbar.classList.remove('height-55');
+        navbar.classList.add('height-75');
+    } else {
+        navbar.classList.remove('height-75');
+        navbar.classList.add('height-55');
+    }
+});
