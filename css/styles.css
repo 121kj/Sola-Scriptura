@@ -71,6 +71,10 @@ nav img {
   width: 118px;
 }
 
+.nav-div {
+
+}
+
 /* title **********************************************************************************/
 
 #title {
@@ -253,6 +257,17 @@ nav img {
                     rgba(18,18,18,1) 90%);
   width    : 100%;
   height   : 4em;
+}
+
+.music-come {
+  width: 280px;
+  height: 280px;
+  box-shadow: 0 0 84px rgba(238, 238, 238, 0.25);
+}
+
+.music-text {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-bottom: 200px;
 }
 
 .apple {
