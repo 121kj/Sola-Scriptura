@@ -302,28 +302,24 @@ nav li {
 }
 
 .button {
-  border-bottom: 1px solid #FAFE3E;
   width: 100%;
   height: 40px;
   display: block;
-  background: linear-gradient(to right, #FAFE3E 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
-}
-
-.button:hover {
-  background-position: left bottom;
 }
 
 .text {
   transition: all .6s ease-out;
   display: block;
   line-height: 40px;
+  border-bottom: 1px solid #FAFE3E;
+  background: linear-gradient(to right, #FAFE3E 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 }
 
 .text:hover {
-  color: black;  
+  color: black;
+  background-position: left bottom;  
 }
 
 /* movement *******************************************************************************/
@@ -477,7 +473,7 @@ td {
 }
 
 @media (min-width: 1200px) {
-  #listen .button {
+  .full {
     display: none;
   }
 }
@@ -513,6 +509,10 @@ td {
   }
 
   .hidden-2col {
+    display: none;
+  }
+
+  #v11, #v12 {
     display: none;
   }
 }

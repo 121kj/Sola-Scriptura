@@ -55,11 +55,14 @@ slider.addEventListener('mousemove', e => {
 // show more
 const btn = document.querySelector('.button');
 const text = document.querySelector('.text');
-const i5 = document.getElementById('5');
-const i6 = document.getElementById('6');
-const i7 = document.getElementById('7');
-const i8 = document.getElementById('8');
-const i9 = document.getElementById('9');
+const i5 = document.getElementById('v5');
+const i6 = document.getElementById('v6');
+const i7 = document.getElementById('v7');
+const i8 = document.getElementById('v8');
+const i9 = document.getElementById('v9');
+const i10 = document.getElementById('v10');
+const i11 = document.getElementById('v11');
+const i12 = document.getElementById('v12');
 let isOpen = false;
 
 btn.addEventListener('click', e => {
@@ -70,6 +73,9 @@ btn.addEventListener('click', e => {
         i7.classList.remove('hidden-2col');
         i8.classList.remove('hidden-2col');
         i9.classList.remove('hidden-2col');
+        i10.classList.remove('hidden-2col', 'full');
+        i11.classList.remove('hidden-2col', 'full');
+        i12.classList.remove('hidden-2col', 'full');
         text.innerHTML = "SHOW LESS";
     } else {
         isOpen = false;
@@ -78,6 +84,9 @@ btn.addEventListener('click', e => {
         i7.classList.add('hidden-2col');
         i8.classList.add('hidden-2col');
         i9.classList.add('hidden-2col');
+        i10.classList.add('hidden-2col', 'full');
+        i11.classList.add('hidden-2col', 'full');
+        i12.classList.add('hidden-2col', 'full');
         text.innerHTML = "SHOW MORE";
     }
 });
