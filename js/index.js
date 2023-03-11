@@ -63,6 +63,9 @@ const i9 = document.getElementById('v9');
 const i10 = document.getElementById('v10');
 const i11 = document.getElementById('v11');
 const i12 = document.getElementById('v12');
+const i13 = document.getElementById('v13');
+const i14 = document.getElementById('v14');
+const i15 = document.getElementById('v15');
 let isOpen = false;
 
 btn.addEventListener('click', e => {
@@ -76,6 +79,9 @@ btn.addEventListener('click', e => {
         i10.classList.remove('hidden-2col', 'full');
         i11.classList.remove('hidden-2col', 'full');
         i12.classList.remove('hidden-2col', 'full');
+        i13.classList.remove('hidden-2col', 'full');
+        i14.classList.remove('hidden-2col', 'full');
+        i15.classList.remove('hidden-2col', 'full');
         text.innerHTML = "SHOW LESS";
     } else {
         isOpen = false;
@@ -87,6 +93,9 @@ btn.addEventListener('click', e => {
         i10.classList.add('hidden-2col', 'full');
         i11.classList.add('hidden-2col', 'full');
         i12.classList.add('hidden-2col', 'full');
+        i13.classList.add('hidden-2col', 'full');
+        i14.classList.add('hidden-2col', 'full');
+        i15.classList.add('hidden-2col', 'full');
         text.innerHTML = "SHOW MORE";
     }
 });
